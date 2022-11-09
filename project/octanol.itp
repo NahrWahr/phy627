@@ -1,0 +1,14 @@
+;;;;;; OCTANOL
+
+[moleculetype]
+; molname 	nrexcl
+  OCO 		1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge
+  1 	P1 	1 	OCO 	PC 	1 	0 
+  2 	C1 	1 	OCO 	C 	2 	0 
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2 	1 	0.47 	1250

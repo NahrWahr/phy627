@@ -1,0 +1,11 @@
+#include "martini_v2.2.itp"
+#include "sample.itp"
+
+[ system ]
+; name
+simple-soln
+
+[ molecules ]
+; name  number
+SMP        500
+

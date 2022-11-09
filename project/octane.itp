@@ -1,0 +1,14 @@
+;;;;;; OCTANE
+
+[moleculetype]
+; molname 	nrexcl
+  OCT 		1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge
+  1 	C1 	1 	OCT 	C 	1 	0 
+  2 	C1 	1 	OCT 	C 	2 	0 
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2 	1 	0.47 	1250

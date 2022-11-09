@@ -1,0 +1,44 @@
+integrator               = md
+dt                       = 0.020
+nsteps                   = 15000   ; change the number of steps appropriately to run 500 ns simulation.
+
+nstxout                  = 0000
+nstvout                  = 0000
+nstfout                  = 0000
+nstlog                   = 5000
+nstenergy                = 5000
+nstxtcout                = 5000
+
+
+cutoff-scheme            = Verlet
+nstlist                  = 20
+ns_type                  = grid
+pbc                      = xyz
+verlet-buffer-tolerance  = 0.005
+
+epsilon_r                = 15
+coulombtype              = reaction-field
+rcoulomb                 = 1.1
+vdw_type                 = cutoff
+vdw-modifier             = Potential-shift-verlet
+rvdw                     = 1.1
+
+; Thermostat
+tcoupl                   = v-rescale
+tc-grps                  = system
+tau_t                    = 1.0
+ref_t                    = 303.15
+
+; Barostat
+pcoupl                  = Parrinello-rahman
+pcoupltype              = isotropic
+tau_p                   = 12.0
+compressibility         =  3e-4
+ref_p                   =   1.0
+
+
+; GENERATE VELOCITIES FOR STARTUP RUN:
+gen_vel                  = no
+refcoord_scaling         = all
+
+

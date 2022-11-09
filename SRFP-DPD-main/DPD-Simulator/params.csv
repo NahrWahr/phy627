@@ -1,0 +1,15 @@
+Parameter,Value
+Num So Particles,1000
+Num Si Particles,0
+Num W Particles,0
+Num C Particles,0
+Num Particles,1000
+Lx,40
+Ly,10
+Lz,10
+r_c,1
+a,20
+sigma,6
+gamma,18
+lambda,0.65
+dt,0.01
